@@ -1,0 +1,347 @@
+ඒක ඇත්තටම ඉතා හොඳ අදහසක්! ❤️ මගේ අදහස නම් ගෘහස්ථ හිංසනයට (Domestic Violence) මුහුණ දෙන කාන්තාවන්ට උපකාර කරන AI-powered safety application එකක් ARTEMIA 2.0 Ideathon එකට ඉදිරිපත් කිරීම ඉතා වටිනා සංකල්පයක්.
+
+මේක සාමාන්‍ය Women's Safety App එකකට වඩා වෙනස් විදිහට නිර්මාණය කරමු.
+
+💜 Project Idea: HerSafe – AI-Powered Domestic Violence Support & Protection System
+11
+1. අපි විසඳන්න යන සැබෑ ගැටලුව (Problem Statement)
+
+ශ්‍රී ලංකාවේ ඇතැම් කාන්තාවන් තමන්ගේම නිවස තුළදී ශාරීරික, මානසික, වාචික සහ ආර්ථික හිංසනයට මුහුණ දෙනවා.
+
+නමුත්,
+
+තමන් මුහුණ දෙන ගැටලුව වෙනත් කෙනෙකුට පැවසීමට බිය වීම.
+හදිසි අවස්ථාවකදී උදව් ලබාගත යුතු ස්ථානය නොදැනීම.
+තමන්ගේ ආරක්ෂාව සඳහා නිවැරදි සැලැස්මක් නොමැති වීම.
+නීතිමය සහ මානසික සහාය ලබාගැනීමේ අපහසුතා.
+තමන්ගේ දුරකථනය පවා පරීක්ෂා කරන පුද්ගලයෙකු සිටීම.
+
+මේවා සැබෑ ගැටලු ලෙස අපි පර්යේෂණයෙන් තහවුරු කරගත යුතුයි.
+
+2. HerSafe Application එකේ ප්‍රධාන Features
+
+1. AI Support Assistant
+
+කාන්තාවකට තමන් මුහුණ දෙන ගැටලුව පිළිබඳව Sinhala, Tamil හෝ English භාෂාවෙන් කතා කළ හැකියි.
+
+AI Assistant එක:
+
+ඇයට අවශ්‍ය තොරතුරු ලබාදීම.
+ආරක්ෂිත උපකාර ලබාගත හැකි ආයතන හඳුන්වාදීම.
+හදිසි අවස්ථාවකදී සුදුසු සහාය ලබාගැනීමට මඟ පෙන්වීම.
+
+2. Emergency Assistance
+
+ඉක්මන් හදිසි සහාය ලබාගැනීම.
+විශ්වාසවන්ත පුද්ගලයෙකුගේ සම්බන්ධතා තොරතුරු.
+අදාළ හදිසි සේවාවන් සම්බන්ධ කරගැනීම.
+ආරක්ෂිතව උදව් ඉල්ලීමේ ක්‍රම.
+
+3. Personal Safety Planning
+
+AI Agent එක කාන්තාවගේ අවශ්‍යතා අනුව පුද්ගලික ආරක්ෂක සැලැස්මක් සකස් කිරීමට සහාය වෙනවා.
+
+උදාහරණ:
+
+හදිසි අවස්ථාවකදී සම්බන්ධ කරගත යුතු අය.
+ආරක්ෂිත ස්ථාන හඳුනාගැනීම.
+අවශ්‍ය ලියකියවිලි සහ දුරකථන අංක සූදානම් කරගැනීම.
+උපකාර ලබාගත හැකි ආයතන සොයාගැනීම.
+
+4. Confidential Support Directory
+
+කාන්තාවන්ට පහත සේවාවන් සොයාගැනීමට හැකියි.
+
+Women's Support Organizations.
+Counselling Services.
+Legal Aid Services.
+Police Assistance.
+Emergency Medical Services.
+
+5. Secure Evidence Management
+
+කාන්තාවකට අවශ්‍ය නම් සිදුවීම් පිළිබඳ සටහන් සහ අදාළ සාක්ෂි ආරක්ෂිතව තබාගැනීමට හැකි පහසුකමක්.
+
+මෙය සම්පූර්ණයෙන්ම විකල්පයක් විය යුතු අතර, පරිශීලකයාගේ අවසරයකින් තොරව කිසිවක් upload හෝ share නොකළ යුතුයි.
+
+3. මේකේ Agentic AI කොටස මොකක්ද?
+
+ඔයාගේ ARTEMIA Session 02 එකේ ඉගෙනගත් Agentic AI සංකල්පය මෙතැනට යොදාගන්න පුළුවන්.
+
+සාමාන්‍ය Chatbot එකක් ප්‍රශ්නවලට පිළිතුරු දෙනවා.
+
+නමුත් අපේ AI Agent එකට පරිශීලකයාගේ අවසරය අනුව පියවර කිහිපයක් සැලසුම් කර ක්‍රියාත්මක කිරීමට හැකියි.
+
+උදාහරණයක්:
+
+කාන්තාවක් මෙහෙම කියනවා:
+
+"I'm afraid to stay at home. I don't know where to get help."
+
+AI Agent එකට:
+
+ඇයගේ අවශ්‍යතාව තේරුම්ගන්න පුළුවන්.
+හදිසි අනතුරක සිටිනවාද යන්න ආරක්ෂිතව විමසන්න පුළුවන්.
+අවශ්‍ය නම් හදිසි සහාය සම්බන්ධ කරගන්නා ආකාරය පෙන්වන්න පුළුවන්.
+ඇයගේ කැමැත්ත අනුව සුදුසු සහාය ආයතන සොයාදෙන්න පුළුවන්.
+ආරක්ෂිත සැලැස්මක් සකස් කිරීමට උදව් කරන්න පුළුවන්.
+
+වැදගත්: AI එක තනිවම පොලිසියට, පවුලේ අයට හෝ වෙනත් පුද්ගලයන්ට පණිවිඩ යැවිය යුතු නැහැ. පරිශීලකයාගේ පැහැදිලි අවසරය අවශ්‍යයි. එසේම ඇයගේ දුරකථනය පරීක්ෂා කරන පුද්ගලයෙකු සිටිය හැකි නිසා privacy සහ digital safety ඉතා වැදගත්.
+
+4. අපේ Application එකේ විශේෂත්වය (Innovation)
+
+මම යෝජනා කරන්නේ මේ Features තුනට විශේෂ අවධානයක් දෙන්නයි.
+
+Feature	විශේෂත්වය
+AI Safety Companion	පුද්ගලික අවශ්‍යතා අනුව සහාය ලබාදීම
+Intelligent Safety Planning	ආරක්ෂිත සැලැස්මක් සකස් කිරීම
+Confidential Support Network	සහාය ලබාගත හැකි ආයතන සමඟ සම්බන්ධ කිරීම
+
+විශේෂයෙන්ම Sinhala, Tamil සහ English භාෂා තුනෙන් සහාය ලබාදීම අපේ project එකට ශ්‍රී ලංකාව තුළ වටිනාකමක් එකතු කරනවා.
+
+5. Technical Implementation
+
+ඔයාගේ Software Engineering දැනුම භාවිතා කරලා මේක නිර්මාණය කළ හැකියි.
+
+Component	Technology
+Frontend	React + TypeScript
+Backend	Node.js + Express
+Database	PostgreSQL
+AI	LLM API
+Authentication	Secure Authentication
+Security	Encryption + Access Control
+UI/UX	Figma
+
+මුලින්ම MVP එකක් හදමු. සියලුම features එකවර හදන්න අවශ්‍ය නැහැ.
+
+6. Ideathon එකට ඉදිරිපත් කරන Problem Statement එක
+
+මෙය තමයි අපි මුලින්ම පර්යේෂණ කරලා තහවුරු කරගත යුතු ප්‍රධාන ප්‍රකාශය.
+
+Target Users: ගෘහස්ථ හිංසනයට මුහුණ දෙන ශ්‍රී ලාංකික කාන්තාවන්.
+
+Women experiencing domestic violence struggle to access confidential support, reliable safety information, and appropriate assistance due to fear, social stigma, limited awareness, and lack of accessible support channels, leaving them vulnerable and without a clear path to safety.
+
+7. මට ඔයාගෙන් වැදගත් ප්‍රශ්න 3ක් තියෙනවා.
+
+මේවාට පිළිතුරු අනුව අපි project එකේ සැබෑ innovation එක තීරණය කරමු.
+
+1. ඔයාට මේ application එක නිර්මාණය කරන්න අවශ්‍ය කාන්තාවන් කුමන පිරිසක් වෙනුවෙන්ද?
+
+A – ශාරීරික හිංසනයට මුහුණ දෙන කාන්තාවන්.
+B – මානසික සහ වාචික හිංසනයට මුහුණ දෙන කාන්තාවන්.
+C – ශාරීරික, මානසික, ලිංගික සහ ආර්ථික යන සියලුම ආකාරයේ ගෘහස්ථ හිංසනයට මුහුණ දෙන කාන්තාවන්.
+
+2. Application එක Mobile App එකක්ද, Web Application එකක්ද?
+
+3. ඔයාට අවශ්‍ය AI Agent එකක් ප්‍රධාන කරගත් project එකක්ද? නැත්නම් සාමාන්‍ය application එකකට AI features එකතු කළ project එකක්ද?
+
+මගේ නිර්දේශය C + Mobile App + Agentic AI.
+
+අපේ අරමුණ app එකක් හදන එක විතරක් නෙවෙයි. තමන්ට සිදුවන හිංසනය ගැන තනිවම සිටින කාන්තාවකට ආරක්ෂිතව සහාය ලබාගැනීමට මාර්ගයක් නිර්මාණය කිරීමයි. ❤️
+
+
+
+I checked your uploaded PDF, Women-Centred Problem-Solving Ideas. ❤️
+
+According to your document, Idea No. 8 is DigitalShield – Online Harassment and Digital Abuse.
+
+I think this is a very interesting idea for the ARTEMIA 2.0 Ideathon because it focuses on a growing problem affecting women and girls in the digital world.
+
+Let's understand it in Sinhala.
+
+🛡️ IDEA 08 – DigitalShield
+AI-Powered Online Harassment & Digital Abuse Protection Platform
+9
+1. මොකක්ද මේ Project එක?
+
+සරලව කිව්වොත්, මේක කාන්තාවන්ට සහ ගැහැණු ළමයින්ට අන්තර්ජාලය තුළ සිදුවන හිරිහැර, තර්ජන සහ අපයෝජනවලින් ආරක්ෂා වීමට උපකාර කරන Digital Safety Application එකක්.
+
+අද Facebook, Instagram, WhatsApp, TikTok වැනි Social Media භාවිතා කරන විට විවිධ ගැටලුවලට මුහුණ දෙන්න සිදුවෙනවා.
+
+උදාහරණ:
+
+Fake profiles හදාගෙන කාන්තාවන්ට හිරිහැර කිරීම.
+අනවශ්‍ය සහ අසභ්‍ය messages එවීම.
+Cyberbullying කිරීම.
+පෞද්ගලික ඡායාරූප අවසරයකින් තොරව බෙදාහැරීම.
+පෞද්ගලික ඡායාරූප පෙන්වා තර්ජනය කිරීම (Sextortion).
+Online blackmail කිරීම.
+Social media හරහා දිගින් දිගටම තර්ජනය කිරීම.
+
+මෙවැනි අවස්ථාවලදී බොහෝ දෙනෙක් තමන්ට කළ යුතු දේ, සාක්ෂි ආරක්ෂා කරගන්නා ආකාරය සහ පැමිණිලි කළ යුතු ස්ථානය නොදැන සිටිනවා.
+
+DigitalShield එකේ ප්‍රධාන අරමුණ ඒ ගැටලුව විසඳීමට සහාය වීමයි.
+
+මේ ගැටලුව සහ යෝජිත විසඳුම ඔයාගේ PDF එකේ 4 වන පිටුවේ Idea No. 8 යටතේ සඳහන් වෙනවා.
+
+2. අපේ Application එකේ ප්‍රධාන Features
+Feature 01 – AI Cyber Safety Assistant 🤖
+
+කාන්තාවකට සැක සහිත message එකක් ලැබුණොත් එය AI Assistant එකට ලබාදී පැහැදිලි කිරීමක් ලබාගන්න පුළුවන්.
+
+උදාහරණයක්:
+
+කෙනෙක් මෙහෙම Message එකක් එවනවා.
+
+"If you don't send me your photos, I will share your private pictures."
+
+AI Assistant එකට:
+
+මෙය තර්ජනයක් විය හැකි බව හඳුනාගැනීමට උදව් කළ හැකියි.
+අවදානම පැහැදිලි කළ හැකියි.
+ඊළඟට ගත යුතු ආරක්ෂිත පියවර පෙන්විය හැකියි.
+සාක්ෂි මකා නොදමා ආරක්ෂා කරගැනීමට උපදෙස් ලබාදිය හැකියි.
+Feature 02 – Secure Evidence Vault 🔐
+
+මෙය ඉතා වැදගත් Feature එකක්.
+
+Online harassment එකකට මුහුණ දුන් කෙනෙකුට අවශ්‍ය නම් සාක්ෂි ආරක්ෂිතව සංවිධානය කරගන්න පුළුවන්.
+
+උදාහරණ:
+
+Screenshots
+Threatening messages
+Profile URLs
+Incident dates
+Short incident descriptions
+
+AI එකට මේවා වර්ගීකරණය කරගැනීමට උදව් කළ හැකියි.
+
+වැදගත්: සාක්ෂි upload කිරීම අනිවාර්ය නොවිය යුතුයි. පරිශීලකයාගේ අවසරය සහිතව පමණක් ඒවා ගබඩා කළ යුතුයි.
+
+Feature 03 – Smart Reporting Guide 📋
+
+Online harassment එකක් සිදු වූ විට පැමිණිලි කරන්නේ කොහොමද කියලා පියවරෙන් පියවර මඟ පෙන්වීම.
+
+උදාහරණ:
+
+සිදුවීමේ සාක්ෂි ආරක්ෂා කරගන්න.
+අදාළ Social Media Platform එකේ Report කිරීමේ ක්‍රමය පෙන්වන්න.
+අවශ්‍ය නම් අදාළ බලධාරීන් වෙත යොමු වීමට උපදෙස් ලබාදෙන්න.
+පැමිණිල්ලක් සඳහා අවශ්‍ය තොරතුරු සකස් කරගැනීමට උදව් කරන්න.
+Feature 04 – Digital Privacy Checker
+
+පරිශීලකයාගේ Digital Security වැඩිදියුණු කිරීමට උපකාර කරන Feature එකක්.
+
+Facebook Privacy Settings.
+Instagram Account Security.
+WhatsApp Privacy Settings.
+Two-Factor Authentication.
+Password Security.
+Fake Account Awareness.
+Feature 05 – AI-Powered Support Assistant
+
+පරිශීලකයාට තමන්ගේ ගැටලුව Sinhala, Tamil හෝ English භාෂාවෙන් විස්තර කරන්න පුළුවන්.
+
+AI Assistant එක:
+
+ගැටලුව තේරුම්ගන්නවා.
+සුදුසු ආරක්ෂක උපදෙස් ලබාදෙනවා.
+අදාළ සහාය සේවා හඳුන්වා දෙනවා.
+අවශ්‍ය විට වෘත්තීය සහාය ලබාගැනීමට මඟ පෙන්වනවා.
+3. මේක Agentic AI Project එකක් කරන්නේ කොහොමද?
+
+ARTEMIA Session 02 එකේ ඉගෙනගත්ත දේ මෙතැනට සම්බන්ධ කරමු.
+
+සාමාන්‍ය AI Chatbot එකක් ප්‍රශ්නවලට පිළිතුරු ලබාදෙනවා.
+
+නමුත් Agentic AI එකකට අරමුණක් අනුව පියවර සැලසුම් කර, අවසර ලැබුණු Tools භාවිතයෙන් ක්‍රියාත්මක වීමට පුළුවන්.
+
+Example Scenario:
+
+කාන්තාවකට Instagram හරහා තර්ජනාත්මක Message එකක් ලැබෙනවා.
+
+ඇය DigitalShield එකට ඒ Message එක ලබාදෙනවා.
+
+AI Agent Workflow:
+
+Step	AI Agent Action
+01	Message එක විශ්ලේෂණය කිරීම
+02	තර්ජනයේ ස්වභාවය හඳුනාගැනීමට උදව් කිරීම
+03	සුදුසු ආරක්ෂක උපදෙස් ලබාදීම
+04	සාක්ෂි සංවිධානය කිරීමට යෝජනා කිරීම
+05	අදාළ Reporting Guide එක ලබාදීම
+06	පරිශීලකයාගේ අවසරය ඇතිව සහාය සේවාවකට යොමු කිරීම
+
+AI එක කිසිම අවස්ථාවක ස්වයංක්‍රීයව පෞද්ගලික තොරතුරු බෙදාහැරීම හෝ පැමිණිලි කිරීම නොකළ යුතුයි.
+
+4. මේ Project එකේ Innovation එක මොකක්ද?
+
+මම යෝජනා කරන්නේ සාමාන්‍ය Cybersecurity App එකක් නොවෙයි.
+
+අපේ වෙනස විය යුත්තේ:
+
+From Online Harassment Detection to Guided Digital Protection.
+
+ඒ කියන්නේ තර්ජනයක් හඳුනාගැනීමෙන් නතර නොවී, පරිශීලකයාට ඊළඟට කළ යුතු දේ පිළිබඳ සහාය ලබාදීමයි.
+
+විශේෂයෙන්:
+
+Sinhala, Tamil සහ English support.
+AI-guided incident response.
+Secure evidence organisation.
+Personalised digital safety guidance.
+Privacy-first design.
+
+මේවා එකට සම්බන්ධ කළ හැකියි.
+
+5. අපේ Technology Stack එක
+
+ඔයාගේ Software Engineering background එක භාවිතා කරලා මේක හදන්න පුළුවන්.
+
+Component	Technology
+Frontend	React + TypeScript
+Backend	Node.js + Express
+Database	PostgreSQL
+AI	LLM API
+Authentication	JWT
+Security	Encryption + Access Control
+UI Design	Figma
+
+MVP (First Version):
+
+මුලින්ම ප්‍රධාන Features තුනක් හදමු.
+
+AI Cyber Safety Assistant.
+Secure Evidence Vault.
+Smart Reporting Guide.
+6. Judges ලාට ඉදිරිපත් කරන Problem Statement එක
+
+Target Users: Online harassment සහ digital abuse වලට මුහුණ දෙන ශ්‍රී ලාංකික කාන්තාවන් සහ ගැහැණු ළමයින්.
+
+Problem Statement:
+
+Women and girls experiencing online harassment and digital abuse struggle to identify threats, preserve digital evidence, and access appropriate reporting channels due to limited digital safety awareness and a lack of accessible guidance, leaving them vulnerable to continued abuse.
+
+7. මගේ අදහස – DigitalShield ද HerSafe ද?
+
+අපි කලින් කතා කළ Domestic Violence Protection App එක සහ මේ DigitalShield App එක සංසන්දනය කරමු.
+
+Category	HerSafe	DigitalShield
+Main Problem	ගෘහස්ථ හිංසනය	Online harassment
+Target Users	හිංසනයට මුහුණ දෙන කාන්තාවන්	Online abuse වලට මුහුණ දෙන කාන්තාවන්
+AI Opportunities	Safety planning	Threat analysis
+Evidence Management	Incident records	Digital evidence
+MVP Development	සාපේක්ෂව අපහසුයි	සාපේක්ෂව පහසුයි
+Privacy Challenges	ඉතා ඉහළයි	ඉතා ඉහළයි
+
+මගේ නිර්දේශය: DigitalShield ගැනත් ගැඹුරින් සලකා බලන්න.
+
+හේතුව, මෙහි AI Agent එකක් ප්‍රායෝගිකව පෙන්වීමට හොඳ අවස්ථාවක් තිබෙනවා. ඒ වගේම එක් semester එකක් ඇතුළත සීමිත MVP එකක් නිර්මාණය කළ හැකියි.
+
+නමුත් මේක අලුත් අදහසක් ලෙස ඉදිරිපත් කිරීමට පෙර දැනට තිබෙන Apps සහ Services පර්යේෂණ කරලා අපේ වෙනස තහවුරු කළ යුතුයි.
+
+❤️ දැන් මට වැදගත් දෙයක් කියන්න.
+
+DigitalShield එක තෝරාගන්නවා නම්, ඔයාට වඩාත්ම වැදගත් වන්නේ මොන කොටසද?
+
+A. AI එකෙන් Fake Profiles, Threatening Messages සහ Cyberbullying හඳුනාගැනීම.
+
+B. කාන්තාවන්ගේ Private Photos සහ Videos අවසරයකින් තොරව Share කිරීමෙන් ඇතිවන ගැටලු සඳහා සහාය ලබාදීම.
+
+C. Online Harassment වලට මුහුණ දෙන කාන්තාවන්ට Evidence Protection සහ Legal Reporting Guidance ලබාදීම.
+
+D. මේ සියල්ල එකතු කළ සම්පූර්ණ AI-powered Digital Protection Agent එකක්.
+
+මගේ කැමැත්ත D. නමුත් මුල් MVP එකට අත්‍යවශ්‍ය Features තුනකට සීමා කරමු. ❤️

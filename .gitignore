@@ -1,0 +1,17 @@
+# Python virtual environments & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Large archives and unneeded raw zips
+*.zip
+photoguard_extracted/
+uploads/
+
+# OS metadata
+Thumbs.db
+.DS_Store
+*.log

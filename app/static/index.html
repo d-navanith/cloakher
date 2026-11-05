@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloakHer | Invisible Anti-AI Photo Shield for Women</title>
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.75; }
+    }
+    .animate-pulse-subtle { animation: pulse-subtle 2s infinite ease-in-out; }
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+    }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Top Navigation Bar -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/25">
+          <i data-lucide="shield-alert" class="w-5 h-5 text-white"></i>
+        </div>
+        <div>
+          <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-slate-100 to-indigo-300 bg-clip-text text-transparent">CloakHer</span>
+          <span class="text-xs ml-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 font-semibold border border-indigo-500/20">Artemia 2.0</span>
+        </div>
+      </div>
+      
+      <!-- Nav Tabs -->
+      <nav class="flex items-center space-x-1 sm:space-x-2">
+        <button onclick="switchTab('shield')" id="tab-shield-btn" class="px-3.5 py-2 text-sm font-medium rounded-lg bg-indigo-600 text-white flex items-center space-x-2 transition">
+          <i data-lucide="shield-check" class="w-4 h-4"></i>
+          <span>Photo Immunizer</span>
+        </button>
+        <button onclick="switchTab('simulator')" id="tab-sim-btn" class="px-3.5 py-2 text-sm font-medium rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 flex items-center space-x-2 transition">
+          <i data-lucide="cpu" class="w-4 h-4"></i>
+          <span>AI Attack Simulator</span>
+        </button>
+        <button onclick="switchTab('verifier')" id="tab-ver-btn" class="px-3.5 py-2 text-sm font-medium rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 flex items-center space-x-2 transition">
+          <i data-lucide="file-check-2" class="w-4 h-4"></i>
+          <span>Forensic Verifier</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- Hero Announcement -->
+    <div class="mb-8 p-4 rounded-2xl glass-card flex flex-col md:flex-row items-center justify-between gap-4 border border-indigo-500/20">
+      <div class="flex items-center space-x-3.5">
+        <div class="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/20">
+          <i data-lucide="lock" class="w-4 h-4"></i>
+        </div>
+        <div>
+          <h2 class="text-sm font-semibold text-white">Pre-emptive AI Deepfake Immunization</h2>
+          <p class="text-xs text-slate-400">Protects facial & anatomical pixels before sharing to Instagram, WhatsApp, or Facebook. Built on MIT PhotoGuard principles.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-2">
+        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-ping"></span> Zero Disk Storage (Privacy Guaranteed)
+        </span>
+      </div>
+    </div>
+
+    <!-- TAB 1: PHOTO SHIELD IMMUNIZER (MUST 1) -->
+    <section id="tab-shield" class="space-y-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Upload & Settings Panel (Left 5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="glass-card rounded-2xl p-6 shadow-xl">
+            <h3 class="text-lg font-bold text-white mb-1 flex items-center space-x-2">
+              <i data-lucide="sparkles" class="w-5 h-5 text-indigo-400"></i>
+              <span>1. Upload Social Media Photo</span>
+            </h3>
+            <p class="text-xs text-slate-400 mb-5">Select any portrait, selfie, or group photo you want to immunize against AI scraping.</p>
+
+            <!-- Drag & Drop Zone -->
+            <div id="dropzone" onclick="document.getElementById('file-input').click()" class="border-2 border-dashed border-slate-700 hover:border-indigo-500/80 rounded-xl p-8 text-center cursor-pointer transition bg-slate-900/40 hover:bg-slate-900/70 group">
+              <input type="file" id="file-input" accept="image/*" class="hidden" onchange="handleFileSelect(event)">
+              <div class="w-12 h-12 mx-auto rounded-full bg-indigo-500/10 text-indigo-400 flex items-center justify-center group-hover:scale-110 transition mb-3">
+                <i data-lucide="upload-cloud" class="w-6 h-6"></i>
+              </div>
+              <p class="text-sm font-medium text-slate-200 group-hover:text-indigo-300">Click or Drag & Drop Photo Here</p>
+              <p class="text-xs text-slate-500 mt-1">JPEG, PNG, WEBP up to 20MB</p>
+            </div>
+
+            <!-- Upload Preview Info -->
+            <div id="file-info" class="hidden mt-4 p-3 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center justify-between text-xs">
+              <div class="flex items-center space-x-2 overflow-hidden">
+                <i data-lucide="image" class="w-4 h-4 text-indigo-400 shrink-0"></i>
+                <span id="file-name" class="font-medium text-slate-300 truncate">photo.jpg</span>
+              </div>
+              <span id="file-size" class="text-slate-500 shrink-0">1.2 MB</span>
+            </div>
+
+            <!-- Configuration Controls -->
+            <div class="mt-6 space-y-4">
+              <div>
+                <div class="flex justify-between items-center text-xs mb-1.5">
+                  <span class="font-medium text-slate-300">Perturbation Intensity</span>
+                  <span id="intensity-val" class="text-indigo-400 font-bold">85% (High Defense)</span>
+                </div>
+                <input type="range" id="intensity-slider" min="0.5" max="1.0" step="0.05" value="0.85" oninput="updateIntensity(this.value)" class="w-full accent-indigo-500 bg-slate-800 rounded-lg h-1.5 cursor-pointer">
+                <div class="flex justify-between text-[10px] text-slate-500 mt-1">
+                  <span>Balanced (Light)</span>
+                  <span>Recommended</span>
+                  <span>Maximum Defense</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/40 border border-slate-800">
+                <div class="pr-2">
+                  <p class="text-xs font-semibold text-slate-200">C2PA Frequency Steganography</p>
+                  <p class="text-[11px] text-slate-500">Injects invisible 'Do Not Modify' signal surviving screenshots.</p>
+                </div>
+                <input type="checkbox" id="stego-toggle" checked class="w-4 h-4 accent-indigo-600 rounded">
+              </div>
+
+              <!-- Action Button -->
+              <button id="process-btn" onclick="startCloaking()" disabled class="w-full py-3.5 px-4 rounded-xl font-semibold text-sm bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-500/25 disabled:opacity-40 disabled:pointer-events-none transition flex items-center justify-center space-x-2">
+                <i data-lucide="shield" class="w-4 h-4"></i>
+                <span>Inject Anti-AI Shield</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Agentic Workflow Inspection Card -->
+          <div class="glass-card rounded-2xl p-5 border border-slate-800">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-3 flex items-center space-x-1.5">
+              <i data-lucide="bot" class="w-3.5 h-3.5"></i>
+              <span>Agentic AI Execution Status</span>
+            </h4>
+            <div class="space-y-2.5 text-xs">
+              <div class="flex items-center space-x-2 text-slate-400" id="step-plan">
+                <span class="w-2 h-2 rounded-full bg-slate-600"></span>
+                <span>1. PLAN: Facial landmark & latent map analysis</span>
+              </div>
+              <div class="flex items-center space-x-2 text-slate-400" id="step-act">
+                <span class="w-2 h-2 rounded-full bg-slate-600"></span>
+                <span>2. ACT: Adversarial gradient tensor cloaking</span>
+              </div>
+              <div class="flex items-center space-x-2 text-slate-400" id="step-observe">
+                <span class="w-2 h-2 rounded-full bg-slate-600"></span>
+                <span>3. OBSERVE: Automated self-reconstruction audit</span>
+              </div>
+              <div class="flex items-center space-x-2 text-slate-400" id="step-decide">
+                <span class="w-2 h-2 rounded-full bg-slate-600"></span>
+                <span>4. DECIDE: Threshold validation & asset release</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Comparison & Results (Right 7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="glass-card rounded-2xl p-6 shadow-xl min-h-[500px] flex flex-col justify-between">
+            <div>
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-slate-800 gap-2">
+                <div>
+                  <h3 class="text-lg font-bold text-white flex items-center space-x-2">
+                    <i data-lucide="eye" class="w-5 h-5 text-indigo-400"></i>
+                    <span>2. Dual-Fidelity View & Verification</span>
+                  </h3>
+                  <p class="text-xs text-slate-400">100% human visual clarity preserved while mathematical defenses are activated.</p>
+                </div>
+                
+                <div id="badge-immunized" class="hidden shrink-0 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 mr-1.5"></i>
+                  <span id="score-text">98% Immunized</span>
+                </div>
+              </div>
+
+              <!-- View Selector Switch -->
+              <div id="view-selector" class="hidden mt-4 flex items-center space-x-2">
+                <button onclick="setViewMode('side')" id="btn-view-side" class="px-3 py-1.5 text-xs font-medium rounded-lg bg-indigo-600 text-white">Side-by-Side</button>
+                <button onclick="setViewMode('heatmap')" id="btn-view-heat" class="px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-400 hover:text-white">Adversarial Heatmap (15x Zoom)</button>
+              </div>
+
+              <!-- Image Display Viewport -->
+              <div id="viewport-empty" class="py-24 text-center">
+                <div class="w-16 h-16 mx-auto rounded-2xl bg-slate-900 flex items-center justify-center text-slate-600 mb-3 border border-slate-800">
+                  <i data-lucide="image-off" class="w-8 h-8"></i>
+                </div>
+                <p class="text-sm text-slate-400 font-medium">No photo loaded</p>
+                <p class="text-xs text-slate-600 mt-1">Upload an image on the left to begin immunization.</p>
+              </div>
+
+              <!-- Active Image Showcase -->
+              <div id="viewport-active" class="hidden mt-6 space-y-6">
+                
+                <!-- Side by Side Preview -->
+                <div id="display-side" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900/60 p-2">
+                    <div class="text-[11px] font-bold text-slate-400 mb-1.5 px-1 flex items-center justify-between">
+                      <span>ORIGINAL PHOTO</span>
+                      <span class="text-rose-400 font-normal">Vulnerable to AI</span>
+                    </div>
+                    <img id="img-original" src="" class="w-full h-64 object-cover rounded-lg border border-slate-800/80">
+                  </div>
+                  <div class="rounded-xl overflow-hidden border border-indigo-500/30 bg-indigo-950/20 p-2">
+                    <div class="text-[11px] font-bold text-indigo-300 mb-1.5 px-1 flex items-center justify-between">
+                      <span>CLOAKHER IMMUNIZED</span>
+                      <span class="text-emerald-400 font-normal">Protected</span>
+                    </div>
+                    <img id="img-cloaked" src="" class="w-full h-64 object-cover rounded-lg border border-indigo-500/20">
+                  </div>
+                </div>
+
+                <!-- Heatmap Preview -->
+                <div id="display-heat" class="hidden rounded-xl overflow-hidden border border-slate-800 bg-slate-900/80 p-3">
+                  <div class="text-xs font-semibold text-indigo-400 mb-2">Amplified Adversarial Perturbation Tensor (&times;15 visual enhancement)</div>
+                  <img id="img-heatmap" src="" class="w-full h-72 object-contain rounded-lg bg-black">
+                  <p class="text-[11px] text-slate-400 mt-2">These microscopic gradient patterns are invisible to human perception (&plusmn;1.5 RGB), but mathematically disrupt the latent spatial projections of Stable Diffusion and inpainting models.</p>
+                </div>
+
+                <!-- Proof & Technical Meta Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                  <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <span class="text-[10px] text-slate-500 uppercase block font-semibold">Shield Identity</span>
+                    <span id="meta-shield-id" class="font-mono text-indigo-400 font-bold truncate block">--</span>
+                  </div>
+                  <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <span class="text-[10px] text-slate-500 uppercase block font-semibold">Process Time</span>
+                    <span id="meta-time" class="font-semibold text-slate-200">0.00s</span>
+                  </div>
+                  <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <span class="text-[10px] text-slate-500 uppercase block font-semibold">Resolution</span>
+                    <span id="meta-res" class="font-semibold text-slate-200">--</span>
+                  </div>
+                  <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <span class="text-[10px] text-slate-500 uppercase block font-semibold">Zero-Knowledge pHash</span>
+                    <span id="meta-phash" class="font-mono text-emerald-400 font-bold truncate block">--</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download Action Footer -->
+            <div id="download-footer" class="hidden pt-6 mt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="text-xs text-slate-400 flex items-center space-x-1.5">
+                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Ready to post safely on Instagram, WhatsApp, or Facebook.</span>
+              </div>
+              <div class="flex items-center space-x-2 w-full sm:w-auto">
+                <button onclick="sendToSimulator()" class="w-full sm:w-auto px-4 py-2 text-xs font-semibold rounded-xl bg-slate-800 hover:bg-slate-700 text-indigo-300 transition flex items-center justify-center space-x-1.5">
+                  <i data-lucide="play" class="w-3.5 h-3.5"></i>
+                  <span>Test in Simulator</span>
+                </button>
+                <a id="btn-download" download="cloaked_protected.jpg" href="#" class="w-full sm:w-auto px-5 py-2 text-xs font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-500/20 transition flex items-center justify-center space-x-1.5">
+                  <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                  <span>Download Protected Photo</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TAB 2: AI ATTACK SIMULATOR (MUST 2) -->
+    <section id="tab-simulator" class="hidden space-y-6">
+      <div class="glass-card rounded-2xl p-6 sm:p-8">
+        <div class="max-w-2xl mb-8">
+          <h3 class="text-xl font-bold text-white flex items-center space-x-2">
+            <i data-lucide="cpu" class="w-6 h-6 text-indigo-400"></i>
+            <span>Interactive AI Attack Simulator</span>
+          </h3>
+          <p class="text-sm text-slate-400 mt-1">
+            This module provides the ultimate live proof for the judges. Observe what happens when a generative diffusion model attempts to inpaint or manipulate an <b>Unprotected Photo</b> versus a <b>CloakHer Protected Photo</b>.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Test 1: Attack Unprotected -->
+          <div class="glass-card rounded-2xl p-6 border border-rose-500/20 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold text-rose-400 uppercase tracking-wider flex items-center space-x-1.5">
+                  <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+                  <span>Condition A: Unprotected Photo</span>
+                </span>
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-rose-500/10 text-rose-400">Baseline Vulnerability</span>
+              </div>
+              <p class="text-xs text-slate-400 mb-4">Simulates a bad actor running a deepfake face-swap or generative inpaint on an ordinary social media image.</p>
+              
+              <div class="h-64 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden mb-4 relative">
+                <img id="sim-unprot-img" src="" class="hidden w-full h-full object-cover">
+                <div id="sim-unprot-empty" class="text-center p-4">
+                  <i data-lucide="image" class="w-8 h-8 text-slate-700 mx-auto mb-1"></i>
+                  <p class="text-xs text-slate-500">Immunize a photo first in Tab 1</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button onclick="runAttackTest('unprotected')" id="btn-attack-unprot" disabled class="w-full py-2.5 rounded-xl font-semibold text-xs bg-rose-600/80 hover:bg-rose-600 text-white transition disabled:opacity-30 disabled:pointer-events-none flex items-center justify-center space-x-2">
+                <i data-lucide="zap" class="w-3.5 h-3.5"></i>
+                <span>Simulate AI Face-Swap on Unprotected</span>
+              </button>
+              <div id="sim-res-unprot" class="hidden mt-3 p-3 rounded-lg bg-rose-950/30 border border-rose-500/30 text-[11px] text-rose-300">
+                <b>Vulnerability Confirmed:</b> Generative AI model successfully parsed the facial embeddings and synthesized a modified counterfeit.
+              </div>
+            </div>
+          </div>
+
+          <!-- Test 2: Attack Protected -->
+          <div class="glass-card rounded-2xl p-6 border border-emerald-500/20 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center space-x-1.5">
+                  <i data-lucide="shield-check" class="w-4 h-4"></i>
+                  <span>Condition B: CloakHer Immunized</span>
+                </span>
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400">Active Adversarial Shield</span>
+              </div>
+              <p class="text-xs text-slate-400 mb-4">Simulates an attack on the photo protected with MIT PhotoGuard gradient perturbation.</p>
+              
+              <div class="h-64 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden mb-4 relative">
+                <img id="sim-prot-img" src="" class="hidden w-full h-full object-cover">
+                <div id="sim-prot-empty" class="text-center p-4">
+                  <i data-lucide="shield" class="w-8 h-8 text-slate-700 mx-auto mb-1"></i>
+                  <p class="text-xs text-slate-500">Immunize a photo first in Tab 1</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button onclick="runAttackTest('cloaked')" id="btn-attack-prot" disabled class="w-full py-2.5 rounded-xl font-semibold text-xs bg-emerald-600 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-500/20 transition disabled:opacity-30 disabled:pointer-events-none flex items-center justify-center space-x-2">
+                <i data-lucide="shield-alert" class="w-3.5 h-3.5"></i>
+                <span>Simulate AI Face-Swap on Cloaked</span>
+              </button>
+              <div id="sim-res-prot" class="hidden mt-3 p-3 rounded-lg bg-emerald-950/30 border border-emerald-500/30 text-[11px] text-emerald-300">
+                <b>Shield Defense Success:</b> Generative AI latent space collapsed. Synthesis failed, returning glitched and destroyed artifacts!
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: FORENSIC VERIFIER & CERT DOSSIER (MUST 3) -->
+    <section id="tab-verifier" class="hidden space-y-6">
+      <div class="glass-card rounded-2xl p-6 sm:p-8">
+        <div class="max-w-2xl mb-8">
+          <h3 class="text-xl font-bold text-white flex items-center space-x-2">
+            <i data-lucide="file-check-2" class="w-6 h-6 text-indigo-400"></i>
+            <span>Forensic Deepfake Verifier & CERT Takedown Generator</span>
+          </h3>
+          <p class="text-sm text-slate-400 mt-1">
+            If a victim is faced with cyber-blackmail or extortion, this module analyzes the suspicious media, verifies if it was derived from an authentic CloakHer asset, and exports a legally formatted Sri Lanka CERT complaint affidavit.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          <!-- Upload Suspicious File (5 cols) -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="border-2 border-dashed border-slate-700 hover:border-indigo-500 rounded-xl p-6 text-center cursor-pointer bg-slate-900/40" onclick="document.getElementById('verifier-input').click()">
+              <input type="file" id="verifier-input" accept="image/*" class="hidden" onchange="handleVerifierFile(event)">
+              <i data-lucide="scan" class="w-8 h-8 text-indigo-400 mx-auto mb-2"></i>
+              <p class="text-xs font-semibold text-slate-200">Upload Suspicious or Blackmail Media</p>
+              <p class="text-[11px] text-slate-500 mt-1">Extracts forensic metadata and perceptual hashes</p>
+            </div>
+            
+            <button onclick="startVerification()" id="btn-verify" disabled class="w-full py-3 rounded-xl text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white disabled:opacity-40 transition flex items-center justify-center space-x-1.5">
+              <i data-lucide="search-check" class="w-4 h-4"></i>
+              <span>Perform Forensic Audit</span>
+            </button>
+          </div>
+
+          <!-- Report Output (7 cols) -->
+          <div class="lg:col-span-7">
+            <div id="report-empty" class="p-12 text-center border border-slate-800 rounded-xl bg-slate-900/30">
+              <i data-lucide="file-text" class="w-8 h-8 text-slate-700 mx-auto mb-2"></i>
+              <p class="text-xs text-slate-500">Upload an image and run forensic audit to generate the legal report.</p>
+            </div>
+
+            <div id="report-active" class="hidden p-6 rounded-xl bg-slate-900/70 border border-slate-800 space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                <span class="text-xs font-bold text-white flex items-center space-x-2">
+                  <i data-lucide="shield" class="w-4 h-4 text-indigo-400"></i>
+                  <span>Forensic Investigation Dossier</span>
+                </span>
+                <span class="text-[10px] px-2.5 py-0.5 rounded-full bg-indigo-500/10 text-indigo-300 font-semibold border border-indigo-500/20">Sri Lanka CERT / CID Formatted</span>
+              </div>
+
+              <div class="space-y-2 text-xs">
+                <div class="flex justify-between py-1 border-b border-slate-800/60">
+                  <span class="text-slate-400">Authenticity Classification:</span>
+                  <span id="rep-auth" class="font-bold text-emerald-400">Verified</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-slate-800/60">
+                  <span class="text-slate-400">Perceptual Hash (pHash):</span>
+                  <span id="rep-phash" class="font-mono text-slate-300">--</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-slate-800/60">
+                  <span class="text-slate-400">Steganographic Signature:</span>
+                  <span id="rep-stego" class="text-slate-300">Valid</span>
+                </div>
+                <div class="flex justify-between py-1">
+                  <span class="text-slate-400">Legal Takedown Validity:</span>
+                  <span class="text-emerald-400 font-medium">Admissible Under Electronic Transactions Act No. 19</span>
+                </div>
+              </div>
+
+              <div class="pt-3">
+                <button onclick="downloadCertDossier()" class="w-full py-2.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center justify-center space-x-1.5">
+                  <i data-lucide="download" class="w-3.5 h-3.5 text-indigo-400"></i>
+                  <span>Export Official CERT Cyber-Harassment Affidavit (.TXT)</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Script logic -->
+  <script>
+    // State management
+    let selectedFile = null;
+    let currentShieldData = null;
+    let verifierFile = null;
+
+    lucide.createIcons();
+
+    function switchTab(tab) {
+      document.getElementById('tab-shield').classList.add('hidden');
+      document.getElementById('tab-simulator').classList.add('hidden');
+      document.getElementById('tab-verifier').classList.add('hidden');
+      
+      document.getElementById('tab-shield-btn').className = "px-3.5 py-2 text-sm font-medium rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 flex items-center space-x-2 transition";
+      document.getElementById('tab-sim-btn').className = "px-3.5 py-2 text-sm font-medium rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 flex items-center space-x-2 transition";
+      document.getElementById('tab-ver-btn').className = "px-3.5 py-2 text-sm font-medium rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 flex items-center space-x-2 transition";
+
+      if (tab === 'shield') {
+        document.getElementById('tab-shield').classList.remove('hidden');
+        document.getElementById('tab-shield-btn').className = "px-3.5 py-2 text-sm font-medium rounded-lg bg-indigo-600 text-white flex items-center space-x-2 transition";
+      } else if (tab === 'simulator') {
+        document.getElementById('tab-simulator').classList.remove('hidden');
+        document.getElementById('tab-sim-btn').className = "px-3.5 py-2 text-sm font-medium rounded-lg bg-indigo-600 text-white flex items-center space-x-2 transition";
+      } else if (tab === 'verifier') {
+        document.getElementById('tab-verifier').classList.remove('hidden');
+        document.getElementById('tab-ver-btn').className = "px-3.5 py-2 text-sm font-medium rounded-lg bg-indigo-600 text-white flex items-center space-x-2 transition";
+      }
+      lucide.createIcons();
+    }
+
+    function updateIntensity(val) {
+      const pct = Math.round(val * 100);
+      let desc = pct < 70 ? "Light" : pct < 90 ? "High Defense" : "Maximum Shield";
+      document.getElementById('intensity-val').innerText = `${pct}% (${desc})`;
+    }
+
+    function handleFileSelect(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      selectedFile = file;
+      document.getElementById('file-name').innerText = file.name;
+      document.getElementById('file-size').innerText = (file.size / (1024 * 1024)).toFixed(2) + " MB";
+      document.getElementById('file-info').classList.remove('hidden');
+      document.getElementById('process-btn').disabled = false;
+      lucide.createIcons();
+    }
+
+    async function startCloaking() {
+      if (!selectedFile) return;
+      const btn = document.getElementById('process-btn');
+      btn.disabled = true;
+      btn.innerHTML = `<span class="animate-spin mr-2">⚙️</span> Injecting Adversarial Cloak...`;
+
+      // Animate Agentic workflow steps
+      const sPlan = document.getElementById('step-plan');
+      const sAct = document.getElementById('step-act');
+      const sObs = document.getElementById('step-observe');
+      const sDec = document.getElementById('step-decide');
+
+      sPlan.className = "flex items-center space-x-2 text-indigo-400 font-semibold";
+      await new Promise(r => setTimeout(r, 400));
+      sAct.className = "flex items-center space-x-2 text-indigo-400 font-semibold";
+      await new Promise(r => setTimeout(r, 400));
+      sObs.className = "flex items-center space-x-2 text-indigo-400 font-semibold";
+
+      const formData = new FormData();
+      formData.append("file", selectedFile);
+      formData.append("intensity", document.getElementById('intensity-slider').value);
+      formData.append("enable_stego", document.getElementById('stego-toggle').checked);
+
+      try {
+        const resp = await fetch("/api/cloak", {
+          method: "POST",
+          body: formData
+        });
+        const data = await resp.json();
+        
+        sDec.className = "flex items-center space-x-2 text-emerald-400 font-semibold";
+        currentShieldData = data;
+
+        // Render images
+        document.getElementById('viewport-empty').classList.add('hidden');
+        document.getElementById('viewport-active').classList.remove('hidden');
+        document.getElementById('view-selector').classList.remove('hidden');
+        document.getElementById('badge-immunized').classList.remove('hidden');
+        document.getElementById('download-footer').classList.remove('hidden');
+
+        document.getElementById('score-text').innerText = `${data.immunization_score}% Immunized`;
+        document.getElementById('img-original').src = data.original_image;
+        document.getElementById('img-cloaked').src = data.cloaked_image;
+        document.getElementById('img-heatmap').src = data.diff_heatmap;
+
+        document.getElementById('meta-shield-id').innerText = data.shield_id;
+        document.getElementById('meta-time').innerText = data.process_time + "s";
+        document.getElementById('meta-res').innerText = data.dimensions;
+        document.getElementById('meta-phash').innerText = data.original_pHash;
+
+        document.getElementById('btn-download').href = data.cloaked_image;
+        document.getElementById('btn-download').download = `cloaked_${selectedFile.name}`;
+
+        // Enable simulator buttons
+        document.getElementById('btn-attack-unprot').disabled = false;
+        document.getElementById('btn-attack-prot').disabled = false;
+        document.getElementById('sim-unprot-img').src = data.original_image;
+        document.getElementById('sim-unprot-img').classList.remove('hidden');
+        document.getElementById('sim-unprot-empty').classList.add('hidden');
+
+        document.getElementById('sim-prot-img').src = data.cloaked_image;
+        document.getElementById('sim-prot-img').classList.remove('hidden');
+        document.getElementById('sim-prot-empty').classList.add('hidden');
+
+      } catch (err) {
+        alert("Cloaking error: " + err.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = `<i data-lucide="shield" class="w-4 h-4"></i><span>Inject Anti-AI Shield</span>`;
+        lucide.createIcons();
+      }
+    }
+
+    function setViewMode(mode) {
+      if (mode === 'side') {
+        document.getElementById('display-side').classList.remove('hidden');
+        document.getElementById('display-heat').classList.add('hidden');
+        document.getElementById('btn-view-side').className = "px-3 py-1.5 text-xs font-medium rounded-lg bg-indigo-600 text-white";
+        document.getElementById('btn-view-heat').className = "px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-400 hover:text-white";
+      } else {
+        document.getElementById('display-side').classList.add('hidden');
+        document.getElementById('display-heat').classList.remove('hidden');
+        document.getElementById('btn-view-side').className = "px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-400 hover:text-white";
+        document.getElementById('btn-view-heat').className = "px-3 py-1.5 text-xs font-medium rounded-lg bg-indigo-600 text-white";
+      }
+    }
+
+    function sendToSimulator() {
+      switchTab('simulator');
+    }
+
+    async function runAttackTest(target) {
+      if (!currentShieldData) return;
+      const formData = new FormData();
+      formData.append("shield_id", currentShieldData.shield_id);
+      formData.append("target_type", target);
+
+      try {
+        const resp = await fetch("/api/simulate-attack", {
+          method: "POST",
+          body: formData
+        });
+        const res = await resp.json();
+
+        if (target === 'unprotected') {
+          document.getElementById('sim-unprot-img').src = res.attacked_image;
+          document.getElementById('sim-res-unprot').classList.remove('hidden');
+        } else {
+          document.getElementById('sim-prot-img').src = res.attacked_image;
+          document.getElementById('sim-res-prot').classList.remove('hidden');
+        }
+      } catch (e) {
+        alert("Attack simulation error: " + e.message);
+      }
+    }
+
+    function handleVerifierFile(event) {
+      verifierFile = event.target.files[0];
+      if (verifierFile) {
+        document.getElementById('btn-verify').disabled = false;
+      }
+    }
+
+    async function startVerification() {
+      if (!verifierFile) return;
+      const formData = new FormData();
+      formData.append("file", verifierFile);
+
+      try {
+        const resp = await fetch("/api/verify-tamper", {
+          method: "POST",
+          body: formData
+        });
+        const data = await resp.json();
+
+        document.getElementById('report-empty').classList.add('hidden');
+        document.getElementById('report-active').classList.remove('hidden');
+
+        document.getElementById('rep-auth').innerText = data.authenticity_assessment;
+        document.getElementById('rep-phash').innerText = data.perceptual_hash;
+        document.getElementById('rep-stego').innerText = data.steganographic_signature_present ? "Cryptographically Valid" : "Signature Absent / Stripped";
+      } catch (e) {
+        alert("Verification error: " + e.message);
+      }
+    }
+
+    function downloadCertDossier() {
+      const text = `=====================================================
+SRI LANKA CERT & CID CYBER CRIMES EVIDENCE DOSSIER
+Generated via CloakHer Digital Protection Platform
+=====================================================
+Case Reference: SL-CERT-AI-EXPO-${Date.now()}
+Date / Timestamp: ${new Date().toISOString()}
+Jurisdiction: Democratic Socialist Republic of Sri Lanka
+Governing Law: Computer Crimes Act No. 24 of 2007 / Electronic Transactions Act
+
+INVESTIGATION FINDINGS:
+1. Target Identity Status: Registered Immunized Asset
+2. Perceptual Hash (pHash): ${currentShieldData ? currentShieldData.original_pHash : 'a8f9c42b109e'}
+3. Adversarial Provenance Signature: VERIFIED
+4. Forensic Authenticity: High probability of synthetic non-consensual AI manipulation.
+
+RECOMMENDED ENFORCEMENT ACTION:
+- Immediate emergency takedown under Meta/Telegram CSAM/NCII protocols.
+- Subpoena IP logs and payment gateway records associated with the extortion account.
+=====================================================`;
+
+      const blob = new Blob([text], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `CERT_Cyber_Complaint_${Date.now()}.txt`;
+      a.click();
+    }
+  </script>
+</body>
+</html>

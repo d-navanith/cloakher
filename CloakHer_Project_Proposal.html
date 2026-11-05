@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 16mm 18mm 16mm;
+    @bottom-right {
+      content: counter(page);
+    }
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.55;
+    font-size: 11pt;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    border-bottom: 3px solid #6366f1;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .title-block h1 {
+    font-size: 24pt;
+    color: #0f172a;
+    margin: 0 0 6px 0;
+    letter-spacing: -0.5px;
+  }
+  .title-block .subtitle {
+    font-size: 13pt;
+    color: #4f46e5;
+    font-weight: 600;
+    margin: 0;
+  }
+  .badge {
+    background: #eef2ff;
+    color: #4338ca;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 9pt;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 6px;
+  }
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    font-size: 10pt;
+  }
+  .meta-item strong {
+    color: #475569;
+    display: block;
+    font-size: 8.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+  h2 {
+    font-size: 14pt;
+    color: #0f172a;
+    border-left: 4px solid #6366f1;
+    padding-left: 10px;
+    margin: 24px 0 12px 0;
+  }
+  h3 {
+    font-size: 11.5pt;
+    color: #1e293b;
+    margin: 16px 0 8px 0;
+  }
+  p {
+    margin: 0 0 10px 0;
+  }
+  .callout {
+    background: #f1f5f9;
+    border-left: 4px solid #0284c7;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    margin: 14px 0;
+    font-size: 10pt;
+  }
+  .callout.alert {
+    background: #fef2f2;
+    border-left-color: #ef4444;
+  }
+  .callout.success {
+    background: #f0fdf4;
+    border-left-color: #16a34a;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 14px 0;
+  }
+  .card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .card h4 {
+    margin: 0 0 6px 0;
+    font-size: 10.5pt;
+    color: #4338ca;
+  }
+  .card p {
+    font-size: 9.5pt;
+    margin: 0;
+    color: #334155;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 9.5pt;
+  }
+  th, td {
+    border: 1px solid #cbd5e1;
+    padding: 8px 10px;
+    text-align: left;
+  }
+  th {
+    background: #f8fafc;
+    color: #1e293b;
+    font-weight: 600;
+  }
+  ul, ol {
+    margin: 0 0 12px 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+  .formula-box {
+    background: #faf5ff;
+    border: 1px solid #d8b4fe;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-style: italic;
+    color: #581c87;
+    margin: 12px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="title-block">
+    <h1>CloakHer (AegisPix)</h1>
+    <div class="subtitle">Adversarial Immunization & Invisible Steganographic Shield for Women's Social Imagery</div>
+    <div class="badge">IEEE WIE Artemia 2.0 Ideathon Proposal</div>
+  </div>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-item">
+    <strong>Competition</strong>
+    Artemia 2.0 (IEEE WIE USJ)
+  </div>
+  <div class="meta-item">
+    <strong>Focus Area</strong>
+    Women's Safety & Cyber Protection
+  </div>
+  <div class="meta-item">
+    <strong>Aligned SDGs</strong>
+    SDG 5, SDG 9, SDG 11
+  </div>
+</div>
+
+<h2>1. Executive Summary & Core Concept</h2>
+<p>
+<strong>CloakHer</strong> is a proactive web and mobile ecosystem engineered to protect women's social media photographs from unauthorized AI exploitation, including non-consensual deepfakes, automated "nudify" algorithms, and extortion schemes.
+</p>
+<p>
+Unlike conventional safety apps that react only <em>after</em> an attack or leak occurs, <strong>CloakHer immunizes digital photos prior to public broadcast</strong>. By injecting imperceptible adversarial perturbations and frequency-domain cryptographic watermarks into facial and anatomical pixels, CloakHer ensures photos look perfectly natural to human viewers while rendering them unprocessable and mathematically disruptive to generative AI models.
+</p>
+
+<h2>2. Problem Identification & Prioritization</h2>
+<div class="formula-box">
+<strong>Validated Problem Statement (Session 01 Standard):</strong><br>
+"Young women and female university students active on digital media (<strong>Who</strong>) struggle with unauthorized scraping and weaponization of their personal photographs into AI-generated non-consensual intimate imagery and blackmail material (<strong>What</strong>) because publicly posted photographs lack pre-emptive technical immunization against generative diffusion models and victims possess no instantaneous method to legally prove synthetic tampering (<strong>Why</strong>), leading to severe psychological distress, reputational extortion, academic derailment, and forced withdrawal from digital society (<strong>Consequence</strong>)."
+</div>
+
+<div class="grid-2">
+  <div class="card">
+    <h4>Why Traditional Watermarks Fail</h4>
+    <p>Visible watermarks ruin personal photographs and can be easily cropped or removed using standard inpainting tools. Furthermore, unregulated deepfake engines ignore visual copyright marks entirely.</p>
+  </div>
+  <div class="card">
+    <h4>The Proactive Protection Imperative</h4>
+    <p>Once a forged image is leaked, legal remediation (e.g., reporting to CERT or police) is slow and reactive. The psychological and social damage has already happened. The only definitive solution is <strong>pre-publication immunity</strong>.</p>
+  </div>
+</div>
+
+<h2>3. Technical Architecture: The 3-Layer Defense Engine</h2>
+<p>CloakHer does not rely on visual overlays. It utilizes mathematical defenses embedded directly into the pixel tensor:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Layer</th>
+      <th>Technology</th>
+      <th>Function & Impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Layer 1</strong></td>
+      <td><strong>Adversarial Latent Disruption</strong><br><em>(Targeted PGD Perturbations)</em></td>
+      <td>Alters pixel gradients by infinitesimal values (&plusmn;1-2 RGB). When ingested by diffusion models or latent encoders, it induces mathematical collapse, producing distorted, scrambled artifacts instead of recognizable faces.</td>
+    </tr>
+    <tr>
+      <td><strong>Layer 2</strong></td>
+      <td><strong>C2PA + DWT-DCT Steganography</strong><br><em>(Frequency Provenance)</em></td>
+      <td>Embeds tamper-resilient metadata and frequency-domain watermarks surviving compression and screenshots. Compliant commercial AI APIs recognize the "Protected Identity" flag and automatically abort synthesis.</td>
+    </tr>
+    <tr>
+      <td><strong>Layer 3</strong></td>
+      <td><strong>Zero-Knowledge Perceptual Hashing</strong><br><em>(Post-Incident Triage)</em></td>
+      <td>Calculates one-way perceptual hashes (pHash) without retaining raw user photos. If deepfake extortion occurs, the user uploads the counterfeit to instantly generate a CERT-admissible forensic verification report.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2>4. Agentic AI Workflow (Session 02 Alignment)</h2>
+<p>
+CloakHer leverages an autonomous <strong>Plan &rarr; Act &rarr; Observe &rarr; Decide</strong> agentic execution loop as formulated in the Artemia 2.0 technical workshops:
+</p>
+
+<ul>
+  <li><strong>1. PLAN:</strong> The agent detects facial landmarks, skin textures, and lighting vectors to calculate the minimum adversarial perturbation required to disrupt generative models while preserving 99.8% human visual fidelity.</li>
+  <li><strong>2. ACT:</strong> Tools apply the mathematical perturbation matrix and write the cryptographic steganographic signature into the Discrete Wavelet Transform (DWT) domain.</li>
+  <li><strong>3. OBSERVE (Autonomous Self-Test):</strong> The agent immediately routes the cloaked image through a sandboxed internal diffusion encoder to test whether the synthetic representation can be reconstructed.</li>
+  <li><strong>4. DECIDE:</strong> If facial feature embeddings remain recognizable above threshold, the agent dynamically recalibrates perturbation intensity until immunization achieves &gt;95% confidence, subsequently releasing the verified asset for user download.</li>
+</ul>
+
+<div class="callout success">
+  <strong>Responsible Autonomy & Guardrails:</strong>
+  <ul>
+    <li><strong>Zero-Storage Architecture (Blast Radius Limitation):</strong> Raw uncloaked photographs reside purely in transient volatile memory (RAM) and are purged immediately after processing.</li>
+    <li><strong>Human-in-the-Loop Safeguard:</strong> Forensic dossiers and CERT complaint forms require explicit user review and digital signature before transmission.</li>
+  </ul>
+</div>
+
+<h2>5. Scope & Feature Prioritization (MoSCoW Matrix)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Priority</th>
+      <th>Feature</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span style="color: #16a34a; font-weight: bold;">MUST (1)</span></td>
+      <td>One-Click Adversarial Cloak Engine</td>
+      <td>Web/Mobile interface for uploading, cloaking, and downloading AI-immunized photographs.</td>
+    </tr>
+    <tr>
+      <td><span style="color: #16a34a; font-weight: bold;">MUST (2)</span></td>
+      <td>Interactive "AI Attack Simulator"</td>
+      <td>Visual verification screen proving to the user how an AI model fails on the cloaked image.</td>
+    </tr>
+    <tr>
+      <td><span style="color: #16a34a; font-weight: bold;">MUST (3)</span></td>
+      <td>Deepfake Verifier & CERT Takedown Generator</td>
+      <td>Forensic comparison tool generating verifiable affidavits for extortion response.</td>
+    </tr>
+    <tr>
+      <td><span style="color: #2563eb; font-weight: bold;">SHOULD</span></td>
+      <td>Social Media Profile Exposure Audit</td>
+      <td>Guidance scan alerting users to publicly scrapable high-risk profile images.</td>
+    </tr>
+    <tr>
+      <td><span style="color: #9333ea; font-weight: bold;">COULD</span></td>
+      <td>Desktop Browser Extension</td>
+      <td>Direct right-click protection prior to uploading images via desktop browsers.</td>
+    </tr>
+    <tr>
+      <td><span style="color: #64748b; font-weight: bold;">NOT YET</span></td>
+      <td>Real-Time Video Stream Cloaking</td>
+      <td>Live webcam frame perturbation for interactive video conferencing.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>6. Competitive Uniqueness & Evaluation Advantage</h2>
+<ul>
+  <li><strong>Beyond Traditional GPS Apps:</strong> Artemia judges evaluate innovation and impact. CloakHer addresses digital violence and cyber-harassment—an area largely untouched by standard travel-safety trackers.</li>
+  <li><strong>Irrefutable Phase 3 Live Demo:</strong> On stage, the team can demonstrate an unprotected photo being altered by a generative AI face-swap live, followed by the CloakHer-immunized photo causing the exact same AI tool to fail catastrophically.</li>
+  <li><strong>Implementation Feasibility:</strong> The core algorithm can be executed via a lightweight Python (FastAPI/PyTorch) microservice coupled with a high-performance React or Flutter user interface.</li>
+</ul>
+
+<div class="callout">
+  <strong>Deliverable Notice:</strong> This proposal document maps directly to Slides 01 through 04 of the official Artemia 2.0 Ideathon Presentation Template (<code>Template (1).pptx</code>).
+</div>
+
+</body>
+</html>
